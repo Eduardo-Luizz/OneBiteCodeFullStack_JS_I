@@ -1,0 +1,20 @@
+*{
+  /*Coloca em tudo*/
+}
+
+li > a {
+  color: red;
+}
+
+h1 + h4{
+  color: green;
+  /*Colocar em todo h4 que vem depois de um h1*/
+}
+
+a[href="/recibo1"]{
+  color: blue;
+}
+
+li:nth-of-type(3){
+  color: pink;
+}

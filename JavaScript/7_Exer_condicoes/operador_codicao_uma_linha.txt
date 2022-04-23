@@ -1,0 +1,2 @@
+
+(velocity > 100) ? console.log("velocidade maior que 100) : console.log("velocidade menor que 100")
