@@ -8,20 +8,26 @@ let menu = prompt(`
   3 - Quilômetros
 `)
 
-let parsec = (distance / 3.262).toFixed(5)
-let au = (distance * 63241).toFixed(1)
-let km = (distance * 9.461e+12)
+let chosenUnity
+let convertedDistance
 
 switch (menu) {
   case "1":
-    alert(`Unidade utilizada =  Parsec(pc) \n O valor em anos luz ${distance} convertido para Parsec é ${parsec}`)
+    chosenUnity = "Parsec"
+    convertedDistance = distance * 0.306601
     break;
   case "2":
-    alert(`Unidade utilizada = Unidade Astronômica(AU) \n O valor em anos luz ${distance} convertido para AU é ${au}`)
+    chosenUnity = "Unidade Astronômica"
+    convertedDistance = distance * 63241.1
     break;
   case "3":
-    alert(`Unidade utilizada = Quilômetros (km)) \n O valor em anos luz ${distance} convertido para km é ${km}`)
+    chosenUnity = "Quilômetros"
+    convertedDistance = distance * 9.5 * Math.pow(10,12) // 10 elevado a 12
     break;
   default:
+    chosenUnity = "Unidade não identificada"
+    convertedDistance = "Conversão fora do escopo"
     break;
 }
+
+alert(` Distâcia em anos luz ${distance} \n Unidade utilizada ${chosenUnity} \n Após a conversão ${convertedDistance}`)
