@@ -1,5 +1,6 @@
 //criação da classe
 class SpacialStation{
+
   // método construtor, instanciação da classe
   constructor(name, platformsQuantity){
     this.name = name
