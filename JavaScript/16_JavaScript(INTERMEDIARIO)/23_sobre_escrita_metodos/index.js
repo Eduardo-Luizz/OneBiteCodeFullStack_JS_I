@@ -16,7 +16,7 @@ class SpaceShip {
 
 class TransportSpaceship extends SpaceShip {
   speedUp() {
-    console.log("Naves de transporte só aumenta a velocidade em 1 km/s")
+    console.log("Naves de transporte só aumentam a velocidade em 1 km/s") //Sempre chama a que sobreescreveu a original
     this.currentVelocity += 1
   }
 }

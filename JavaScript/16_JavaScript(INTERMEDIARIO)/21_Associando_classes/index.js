@@ -5,7 +5,7 @@ class Captain {
     this.flightHours = flightHours
   }
 }
-
+// Está classe interage com a Captain
 class SpaceShip {
   constructor(name, crewQuantity, captainName, captainAge, captainFlightHours){
     this.name = name
@@ -17,3 +17,4 @@ class SpaceShip {
 let spaceShip = new SpaceShip("Ártemis", 13, "Will Grey", 45, 15000)
 
 console.log(spaceShip)
+console.log(Captain)

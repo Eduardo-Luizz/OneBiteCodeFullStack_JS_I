@@ -1,10 +1,13 @@
+//Set atribui valor a uma variável
+
+
 class TransportSpaceShip {
   constructor(name) {
     this.name = name
     this.currentVelocity = 0
   }
 
-  set velocity(newVelocity){
+  set velocity(newVelocity){ // -> isso e um metodo
     if (newVelocity > 120) {
       this.currentVelocity = 120
     } else {

@@ -9,14 +9,14 @@ class SpaceShip {
   speedUp(acceleration) {
     this.currentVelocity += acceleration
     if(this.currentVelocity > this.maxRecommendedVelocity) {
-      console.log("VELOCIDADE MÁXIMA ULTRAPASSADA !! \n DIMINUA OU PODERÁ CAUSAR DANOS A NAVE")
+      console.log("VELOCIDADE MÁXIMA ULTRAPASSADA !!\nDIMINUA OU PODERÁ CAUSAR DANOS A NAVE")
     }
   }
 }
 
 class TransportSpaceship extends SpaceShip {
   constructor(name, maxCrew, maxRecommendedVelocity, maxLoadWeight) {
-    super(name, maxCrew, maxRecommendedVelocity)
+    super(name, maxCrew, maxRecommendedVelocity) // chama o construtor da classe
     this.maxLoadWeight = maxLoadWeight
   }
 
