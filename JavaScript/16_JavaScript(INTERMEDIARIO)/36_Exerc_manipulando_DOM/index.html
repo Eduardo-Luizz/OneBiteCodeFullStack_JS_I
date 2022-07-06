@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,34 @@
   <title>Document</title>
   <script src="index.js"></script>
 </head>
+
 <body>
-  <form id="data">
-    <p>
-      <label>Número da residência: </label>
-      <input type="number" name="number-house"> 
-    </p>
-  </form>
+  <h2>Home register</h2>
+    <form id="data">
+      <p>
+        <label>Número da residência: </label>
+        <input type="number" name="number-house">
+      </p>
 
-  <button onclick="addNewHouse()">Adicionar</button>
+      <p>
+        <label>Bairro: </label>
+        <input type="text" name="bairro">
+      </p>
 
+      <p>
+        <label>Cidade: </label>
+        <input type="text" name="cidade">
+      </p>
+
+      <p>
+        <label>Área da casa: </label>
+        <input type="text" name="area-da-casa">
+      </p>
+
+      <button onclick="saveHouse()" type="button">Adicionar</button>
+    </form>
+
+    <ul id="house-list"></ul>
 </body>
+
 </html>

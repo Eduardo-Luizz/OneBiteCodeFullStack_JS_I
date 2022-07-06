@@ -18,9 +18,9 @@ class SpaceShipWeapon {
   }
 }
 
-let fenixWeapon = new SpaceShipWeapon(10)
+let fenixWeapon = new SpaceShipWeapon(154789)
 
-try {
+try { // Se o try encontra erro vai pro catch
 fenixWeapon.shoot()
 fenixWeapon.shoot()
 fenixWeapon.shoot()
@@ -31,6 +31,6 @@ fenixWeapon.shoot()
   console.log(error.message)
   fenixWeapon.reload()
 } finally { // Sempre executa não depende de nenhum evento do try catch
-  console.log("A arma deu bons tiros")
+  console.log(`A arma ${fenixWeapon.identifier} deu bons tiros`)
 }
 console.log(fenixWeapon)

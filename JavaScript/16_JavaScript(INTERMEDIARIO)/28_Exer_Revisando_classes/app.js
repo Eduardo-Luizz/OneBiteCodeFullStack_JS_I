@@ -62,7 +62,7 @@ class App {
 
   accelerateSpaceShip() {
     let acceleration = Number(prompt("Quanto gostaria de acelerar ? "))
-    this.spaceShip.speedUp()
+    this.spaceShip.speedUp(acceleration)
   }
 
   printAndExit() {

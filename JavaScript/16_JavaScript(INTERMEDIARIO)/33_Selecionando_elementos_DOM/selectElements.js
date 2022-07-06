@@ -1,7 +1,7 @@
 
 function show() {
-  let element = document.getElementById("name")
-  console.log(element.value) // Como faz parte do DOM consigo pegar o seu valor, para ver esse resultado é preciso f12 no navegador
+  let element = document.getElementById("name") // => document é o DOM 
+  console.log(`getElementById ${element.value}`) // Como faz parte do DOM consigo pegar o seu valor, para ver esse resultado é preciso f12 no navegador
 }
 
 function show() {
